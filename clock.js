@@ -12,6 +12,7 @@ function getTime() {
   } : ${seconds > 9 ? seconds : `0${seconds}`}`;
 }
 function init() {
+  getTime();
   setInterval(getTime, 1000);
 }
 
