@@ -13,7 +13,7 @@ function getWeather(lat, lon) {
     .then(function (json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerHTML = `${temperature}&deg @ ${place}`;
+      weather.innerHTML = `${place} 의 온도 ${temperature}&deg `;
     });
 }
 
